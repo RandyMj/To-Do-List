@@ -1,0 +1,11 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "Compiler for the To Do List project.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./src/scss/style.scss ./src/css/style.css"
+  },
+  "author": "RandyMj",
+  "license": "ISC"
+}
