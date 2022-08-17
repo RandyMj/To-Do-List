@@ -1,0 +1,32 @@
+.form-container {
+  height: 275px;
+  width: 35em;
+  padding-top: 15px;
+  h1 {
+    margin-left: calc(50% - 100px);
+  }
+  .inputBox {
+    width: 32em;
+    height: 33px;
+    border-radius: 15px 0 0 15px;
+  }
+  .inputBtn {
+    width: 7em;
+    height: 33px;
+    border-radius: 0 15px 15px 0;
+    background-color: black;
+    color: $form-text-color;
+  }
+  .inputBox,
+  .inputBtn {
+    margin-top: 50px;
+    border: none;
+    list-style: none;
+    box-shadow: $box-shadow;
+  }
+  .inputBtn:hover {
+    transition: 0.5s all ease;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
