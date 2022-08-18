@@ -16,15 +16,21 @@
   <body>
     <div class="form-container">
       <h1>To Do List</h1>
-      <input type="text" placeholder=" Add your task here!" class="inputBox" />
-      <button class="inputBtn">Add Task</button>
+      <input
+        type="text"
+        placeholder=" Add your task here!"
+        maxlength="50"
+        class="inputBox"
+        id="addTaskInput"
+      />
+      <button class="inputBtn" id="addTaskBtn">Add Task</button>
 
       <input type="text" placeholder=" Search box" class="inputBox" />
       <button class="inputBtn">Search</button>
     </div>
 
-    <div class="list-container">
-      <div class="task_details">
+    <div class="list-container" id="list-container">
+      <!-- <div class="task_details">
         <div class="task">
           <p class="task_date">Date: MM/DD/YYYY</p>
           <p class="task_description">Task description:</p>
@@ -38,12 +44,12 @@
             <img src="./src/assets/delete.svg" alt="" class="deleteImg" />
           </button>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="reference">
       <p>Github: @RandyMj</p>
     </div>
-    <!-- <script src="./src/js/scripts.js"></script> -->
+    <script src="./src/js/scripts.js"></script>
   </body>
 </html>
