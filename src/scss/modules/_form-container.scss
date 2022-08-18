@@ -9,24 +9,28 @@
     width: 32em;
     height: 33px;
     border-radius: 15px 0 0 15px;
+    outline: none;
+    text-align: center;
+    margin-right: 0;
+    box-shadow: $box-shadow;
   }
   .inputBtn {
     width: 7em;
     height: 33px;
     border-radius: 0 15px 15px 0;
-    background-color: black;
+    background-color: $submit-btn-bkg;
     color: $form-text-color;
+    transform: translateX(-5px);
   }
   .inputBox,
   .inputBtn {
     margin-top: 50px;
     border: none;
-    list-style: none;
-    box-shadow: $box-shadow;
   }
   .inputBtn:hover {
-    transition: 0.5s all ease;
-    transform: scale(1.2);
+    transition: 0.2s all ease;
+    transform: scale(1.1);
     cursor: pointer;
+    background-color: $submit-btn-bkg-hover;
   }
 }
