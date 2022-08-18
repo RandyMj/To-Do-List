@@ -20,7 +20,7 @@
     border-radius: 0 15px 15px 0;
     background-color: $submit-btn-bkg;
     color: $form-text-color;
-    transform: translateX(-5px);
+    transform: translateX(-15px);
   }
   .inputBox,
   .inputBtn {
@@ -29,8 +29,11 @@
   }
   .inputBtn:hover {
     transition: 0.2s all ease;
-    transform: scale(1.1);
+    transform: scale(1.2);
     cursor: pointer;
-    background-color: $submit-btn-bkg-hover;
+  }
+  .inputBox::placeholder {
+    font-family: $font;
+    font-weight: bold;
   }
 }

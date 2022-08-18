@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
     <title>To Do List</title>
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
@@ -17,7 +23,23 @@
       <button class="inputBtn">Search</button>
     </div>
 
-    <div class="list-container"></div>
+    <div class="list-container">
+      <div class="task_details">
+        <div class="task">
+          <p class="task_date">Date: MM/DD/YYYY</p>
+          <p class="task_description">Task description:</p>
+        </div>
+
+        <div class="checkDelete">
+          <button class="check"></button>
+          <button class="delete"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="reference">
+      <p>Github: @RandyMj</p>
+    </div>
     <!-- <script src="./src/js/scripts.js"></script> -->
   </body>
 </html>
