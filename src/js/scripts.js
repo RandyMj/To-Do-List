@@ -14,15 +14,15 @@ function addNewTask() {
     taskListContainer.append(createNewTask);
     createNewTask.innerHTML = `
       <div class="task">
-      <p class="task_date">Date: ${actualDate}</p>
+      <p class="task_date">Creation Date: ${actualDate}</p>
       <p class="task_description">Task description: ${addTaskInput.value}</p>
       </div>
       
       <div class="checkDelete">
-      <button class="checkBtn">
+      <button class="checkBtn" id="checkBtn">
       <img src="./src/assets/check.svg" alt="" class="checkImg" />
       </button>
-      <button class="deleteBtn">
+      <button class="deleteBtn" id="deleteBtn">
       <img src="./src/assets/delete.svg" alt="" class="deleteImg" />
       </button>
       </div>
