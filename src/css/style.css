@@ -16,6 +16,10 @@ html body {
   padding-left: calc(50% - 260px);
 }
 
+.inactive {
+  display: none;
+}
+
 .form-container {
   height: 275px;
   width: 35em;

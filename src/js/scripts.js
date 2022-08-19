@@ -19,14 +19,23 @@ function addNewTask() {
       </div>
       
       <div class="checkDelete">
-      <button class="checkBtn" id="checkBtn">
+      <button onclick="completedTask()" class="checkBtn" id="checkBtn">
       <img src="./src/assets/check.svg" alt="" class="checkImg" />
       </button>
-      <button class="deleteBtn" id="deleteBtn">
+      <button onclick="deletedTask()" class="deleteBtn" id="deleteBtn">
       <img src="./src/assets/delete.svg" alt="" class="deleteImg" />
       </button>
       </div>
       `;
     addTaskInput.value = "";
   }
+}
+
+// Function to check and delete tasks. They are called in the html attribute "onclick". Check previous innerHtml in the addNewTaks function.
+function completedTask() {
+  console.log("Checked");
+}
+
+function deletedTask() {
+  console.log("Deleted");
 }
