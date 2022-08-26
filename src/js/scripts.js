@@ -4,6 +4,7 @@ const taskListContainer = document.getElementById("list-container");
 const actualDate = new Date().toDateString();
 
 addTaskBtn.addEventListener("click", addNewTask);
+// let currentTasks = [];
 
 function addNewTask() {
   if (!addTaskInput.value) {
@@ -28,14 +29,27 @@ function addNewTask() {
       </div>
       `;
     addTaskInput.value = "";
+    // currentTasks.push(createNewTask);
   }
 }
 
-// Function to check and delete tasks. They are called in the html attribute "onclick". Check previous innerHtml in the addNewTaks function.
+// Function to check and delete tasks. They are called in the html attribute "onclick". Check previous innerHtml in the addNewTasks function.
 function completedTask() {
-  console.log("Checked");
+  console.log("Completed");
+  // Find the button of the task to check.
+  // for (i = 0; i < currentTasks.length; i++) {
+  //   let findBtn = document.querySelector(".checkBtn");
+  //   findBtn.classList.add([i]);
+  //   console.log(findBtn);
+  // let validation = findBtn.classList.contains(`${[i]}`);
+  // if(currentTasks[i] == findBtn.classList.contains) {}
+  // }
 }
 
 function deletedTask() {
   console.log("Deleted");
 }
+
+// let taskInContainer = document.querySelector(".task_details");
+// taskInContainer.setAttribute("class", "inactive");
+// taskInContainer.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
